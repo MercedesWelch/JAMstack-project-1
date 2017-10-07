@@ -7,7 +7,7 @@ media_folder: "src/img/gallery" # Folder where user-uploade files go
 
 collections:
   - name: food # Used in routes, e.g., /admin/collections/blog
-    label: "Food" # Used in the UI
+    label: "Food Item" # Used in the UI
     folder: "site/content/food" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     # slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
