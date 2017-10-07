@@ -10,7 +10,6 @@ collections:
     label: "Food Item" # Used in the UI
     folder: "site/content/food" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    # slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Name of Item", name: "title", widget: "string"}
       - {label: "Supported Meals", name: "categories", widget: "list", default: ["lunch", "dinner"]}
@@ -22,10 +21,18 @@ collections:
     label: "Drink Item" # Used in the UI
     folder: "site/content/drinks" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    # slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Name of Drink", name: "title", widget: "string"}
       - {label: "Drink Marker", name: "categories", widget: "hidden", default: ["drinks"]}
       - {label: "Ingredients/Description", name: "description", widget: "text"}
       - {label: "Type of Drink", name: "type", widget: "string", default:"beer"}     
       - {label: "Price", name: "price", widget: "string"}
+
+  - name: gallery # Used in routes, e.g., /admin/collections/blog
+    label: "Gallery Image" # Used in the UI
+    folder: "site/content/gallery" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Gallery Image", name: "image", widget: "image"}
+      
